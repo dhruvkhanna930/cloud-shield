@@ -1,0 +1,179 @@
+body {
+  margin: 10px;
+  background: #4a6683;
+}
+
+canvas {
+  z-index: 2;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#second {
+  z-index: -1;
+}
+
+.circle,
+.moon {
+  border-radius: 100%;
+}
+
+.circle {
+  width: 448px;
+  height: 448px;
+  background: linear-gradient(to bottom, rgb(60, 60, 90), #0e0e0e);
+  border: 10px solid #fff;
+  box-shadow: 0 0 0 3px #3E3A43;
+  position: absolute;
+  margin-top: -250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 1;
+}
+.circle .moon {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(to bottom, rgb(200, 200, 230), #1a1a39);
+  position: absolute;
+  left: 92px;
+  top: 40px;
+}
+.circle .mount {
+  height: 380px;
+  width: 260px;
+  background: linear-gradient(to bottom, #3E3A43, black);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 145px;
+  left: -190px;
+  right: 0;
+  margin: auto;
+  box-shadow: inset -94px 0px 60px rgba(0, 0, 0, 0.4);
+}
+.circle .mount:nth-child(3) {
+  top: 224px;
+  left: -410px;
+  box-shadow: inset -215px 0px 60px rgba(0, 0, 0, 0.4);
+}
+.circle .mount:nth-child(5) {
+  top: 224px;
+  left: 210px;
+  z-index: 3;}
+
+.cloud-container {
+    position: relative;
+    margin-top: 290px;
+    margin-right: 700px;
+}
+
+ /* for input field */
+ 
+ :root {
+  color: #bababa;
+  font: 1rem "PT Sans", sans-serif; 
+}
+
+html,
+body,
+.container {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+}
+a:hover {
+  color: #7f8ff4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 500px;
+  margin-top: -500px;
+  margin-left: 600px;
+  width: 10;
+}
+.contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -100px;
+  overflow:visible;
+  margin-left: 600px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+/* .btn--primary {
+  background: #7f8ff4;
+  color: #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 12px 36px;
+} */
+.btn--primary:hover {
+  background: #6c7ff2;
+}
+.btn--primary:active {
+  background: #7f8ff4;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+.btn--inside {
+  margin-left: -96px;
+}
+
+/* .form__field {
+  width: 360px;
+  background: #fff;
+  color: #a3a3a3;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
+} */
+.form__field {
+  width: 360px;
+  background: #fff;
+  color: #a3a3a3;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
+  margin-bottom: 20px; /* Add margin to push the form field up */
+}
+
+.btn--primary {
+  background: #7f8ff4;
+  color: #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 12px 36px;
+  margin-top: -10px; /* Add margin to pull the button up */
+}
+
+.margin-top-20 {
+  margin-top: 120px; /* You can adjust the value to add more or less space */
+  color: rgb(132, 148, 241);
+}

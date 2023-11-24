@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/styles2.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/styles3.css' %}" />
+    <!-- <link rel="stylesheet" href="{% static 'styles/style5.css' %}" /> -->
+    <title>CloudShield!</title>
+    <style>
+      #typewriter {
+          border-right: 1px solid #000;
+          white-space: nowrap;
+          overflow: hidden;
+          font-size: 24px;
+          animation: typing 3s steps(30) infinite;
+      }
+
+      @keyframes typing {
+          from {
+              width: 0;
+          }
+          to {
+              width: 100%;
+          }
+      }
+  </style>
+  </head>
+
+  <body>
+
+    {% block content %}
+
+
+    {% endblock %}
+   
+    <script src="{%static 'js/script.js' %}"></script>
+    <script type="module" src="{% static 'js/cloud.js' %}"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const typewriter = document.getElementById('typewriter');
+          const text = 'Your cloudburst prediction hub!';
+          let index = 0;
+
+          function type() {
+              typewriter.innerHTML = text.slice(0, index++);
+              if (index <= text.length) {
+                  setTimeout(type, 110);
+              }
+          }
+
+          type();
+      });
+  </script>
+  </body>
+</html>

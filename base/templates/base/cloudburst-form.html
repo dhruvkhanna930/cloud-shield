@@ -1,0 +1,152 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<body>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+
+    <div class="first-wrapper">
+        <div class="wrapper">
+            <div class="sun"></div>
+            <div class="cloud">
+                <div class="cloud1">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+                <div class="cloud1 c_shadow">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+            </div>
+            
+            <div class="cloud_s">
+                <div class="cloud1">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+                <div class="cloud1 c_shadow">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+            </div>
+            
+            <div class="cloud_vs">
+                <div class="cloud1">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+                <div class="cloud1 c_shadow">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+            </div>
+            <div class="haze"></div>
+            <div class="haze_stripe"></div>
+            <div class="haze_stripe"></div>
+            <div class="haze_stripe"></div>
+            <div class="thunder"></div>
+            <div class="rain">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="sleet">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="text">
+            </div>
+        </div>
+    </div>
+    <div class="we-form">
+        <form method="GET" action="{% url 'result' %}">
+  
+            <div class="segment">
+              <h1>Cloud Shield</h1>
+            </div>
+            
+            <label>
+                <input value="Albury" type="text" placeholder="City" name="city"/>
+            </label>
+
+            <label>
+              <input type="text" placeholder="Minimum temperature(°C)" name="mintemp"/>
+            </label>
+
+            <label>
+                <input type="text" placeholder="Maximum temperature(°C)" name="maxtemp"/>
+            </label>
+
+            <label>
+                <input type="text" placeholder="Rainfall(mm)" name="rainfall"/>
+            </label>
+
+            <label>
+                <input type="text" placeholder="Wind Gust Direction" name="windGustDirection"/>
+            </label>
+
+            <label>
+                <input type="text" placeholder="Wind Gust Speed(km/hr)" name="windGustSpeed"/>
+            </label>
+
+            <label>
+                <input type="text" placeholder="Humidity(gm/cc)" name="humidity"/>
+            </label>
+ 
+            <label>
+                <input type="text" placeholder="Pressure(mbar)" name="pressure"/>
+            </label>
+
+            <label>
+                <input type="text" placeholder="Temperature(°C)" name="temperature"/>
+            </label>
+
+            <input class="r red" type="submit" value="Predict Cloud Burst" >
+
+          </form>
+    </div>
+    </div >
+    <script src="script.js"></script>
+</body>
+
+{% endblock %}
